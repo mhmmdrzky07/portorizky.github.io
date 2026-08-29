@@ -1,0 +1,514 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.container-navbar {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ul-navbar {
+    background: #004166;
+    background: linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    background: -webkit-linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    background: -moz-linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 3px 5px 7px #000000;
+}
+
+.li-navbar:hover {
+    background-color: #6c63ff;
+    transition: 150ms ease-in-out;
+    border-radius: 9px;
+}
+
+.container-a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes munculDariBawah {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.judul {
+    animation: munculDariBawah 1s ease;
+}
+
+.p-judul {
+    animation: munculDariBawah 1s ease 0.3s both;
+}
+
+.judul {
+    color: #6c63ff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+.p-judul {
+    color: #000000;
+    font-size: 19px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding-bottom: 70px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.profil {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+/* ANIMASI AWAL */
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profil-reveal,
+.pendidikan-reveal,
+.keahlian-reveal,
+.tentang-reveal,
+.perjalanan-reveal,
+.belajar-reveal,
+.rencana-reveal,
+.prinsip-reveal,
+.sosmed-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.profil-reveal.active,
+.pendidikan-reveal.active,
+.keahlian-reveal.active,
+.tentang-reveal.active,
+.perjalanan-reveal.active,
+.belajar-reveal.active,
+.rencana-reveal.active,
+.prinsip-reveal.active,
+.sosmed-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ANIMASI END */
+
+.img-profil {
+    height: 250px;
+    width: 250px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-profil:hover {
+    transform: scale(1.10);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.nama-profil {
+    text-decoration: underline;
+    color: #555555;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.pendidikan {
+
+    color: #000000;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-pendidikan {
+    width: fit-content;
+    margin: 0 auto 50px;
+}
+
+.p-pendidikan p {
+    display: grid;
+    grid-template-columns: 120px auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.p-pendidikan span {
+    font-weight: bold;
+}
+
+.keahlian-judul {
+    color: #000000;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.ul-ahli {
+
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+
+
+
+
+}
+
+.li-ahli {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.li-ahli:hover {
+    transform: translateX(8px);
+}
+
+.li-ahli img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.judul-tentang {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+
+}
+
+.h2-perjalanan {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+
+.h2-carabelajar {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+
+.h2-rencana {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+.h2-prinsip {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+.p-text {
+    max-width: 900px;
+    margin: 40px auto 0;
+    text-align: justify;
+}
+
+.p-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.h2-sosmed {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+.container-content {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 70px 20px;
+    flex-wrap: wrap;
+}
+
+/* SEMUA CARD SOSIAL MEDIA */
+.p-content,
+.p1-content,
+.p2-content {
+    width: 155px;
+    height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    color: #000000;
+    text-decoration: none;
+
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease,
+        border-radius 0.4s ease,
+        background 0.4s ease;
+
+    overflow: hidden;
+}
+
+/* GAMBAR */
+.img-content,
+.img1-content,
+.img2-content {
+    object-fit: contain;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.35));
+
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.4s ease;
+}
+
+/* UKURAN ICON */
+.img-content {
+    width: 85px;
+    height: 70px;
+}
+
+.img1-content {
+    width: 80px;
+    height: 80px;
+}
+
+.img2-content {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+
+.p-content:hover,
+.p1-content:hover,
+.p2-content:hover {
+    transform: translateY(-10px) scale(1.05);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.p-content:hover .img-content,
+.p1-content:hover .img1-content,
+.p2-content:hover .img2-content {
+    transform: scale(1.08) translateY(-4px);
+
+    filter: drop-shadow(3px 7px 8px rgba(0, 0, 0, 0.45));
+}
+
+@media (max-width:600px) {
+    .container-navbar {
+        height: auto;
+    }
+
+    .ul-navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 14px 0;
+        gap: 1px;
+    }
+
+    .li-navbar {
+        font-size: 15px;
+        margin: 2px;
+    }
+
+    .container-a {
+        height: auto;
+    }
+
+    .judul {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .p-judul {
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+    .img-profil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pendidikan {
+        padding-top: 20px;
+    }
+
+    .p-pendidikan {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .p-pendidikan p {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .h2-sosmed {
+        font-size: 25px;
+    }
+
+    .p-text {
+        max-width: 80%;
+    }
+
+    .container-content {
+        min-height: auto;
+        padding: 40px 10px 60px;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .p-content,
+    .p1-content,
+    .p2-content {
+        width: 105px;
+        height: 115px;
+        flex-shrink: 0;
+
+        border-radius: 22px;
+
+        font-size: 11px;
+        letter-spacing: 0;
+
+        box-shadow:
+            0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .img-content {
+        width: 65px;
+        height: 50px;
+    }
+
+    .img1-content {
+        width: 60px;
+        height: 60px;
+    }
+
+    .img2-content {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* HOVER / TOUCH */
+    .p-content:hover,
+    .p1-content:hover,
+    .p2-content:hover {
+        transform: translateY(-6px) scale(1.03);
+    }
+
+    .p-content:hover .img-content,
+    .p1-content:hover .img1-content,
+    .p2-content:hover .img2-content {
+        transform: scale(1.05) translateY(-2px);
+    }
+    .ul-ahli {
+        width: auto;
+    }
+
+}

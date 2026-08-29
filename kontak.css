@@ -1,0 +1,352 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.container-navbar {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ul-navbar {
+    background: #004166;
+    background: linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    background: -webkit-linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    background: -moz-linear-gradient(177deg, #004166 0%, #0c0049 80%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 3px 5px 7px #000000;
+}
+
+.li-navbar:hover {
+    background-color: #6c63ff;
+    transition: 150ms ease-in-out;
+    border-radius: 9px;
+}
+
+.container-a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes munculDariBawah {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.judul {
+    animation: munculDariBawah 1s ease;
+}
+
+.p-judul {
+    animation: munculDariBawah 1s ease 0.3s both;
+}
+
+.gmail-animasi {
+    animation: munculDariBawah 1s ease 0.6s both;
+}
+
+.wa-animasi {
+    animation: munculDariBawah 1s ease 0.7s both;
+}
+
+.dc-animasi {
+    animation: munculDariBawah 1s ease 0.8s both;
+}
+
+.p-penutup {
+    animation: munculDariBawah 1s ease 0.9s both;
+}
+
+.judul {
+    color: #6c63ff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.43);
+    padding-top: 50px;
+}
+
+.p-judul {
+    color: #000000;
+    font-size: 19px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    padding-bottom: 70px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.container-kontak {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.gmail-img {
+    width: 120px;
+    height: 100px;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.35));
+    transition: all 0.6s ease;
+}
+
+.link-gmail {
+    width: 190px;
+    height: 190px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    background: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    transition: all 0.6s ease;
+
+}
+
+.gmail-img:hover {
+    width: 110px;
+    height: 100px;
+    background: linear-gradient(135deg, #80261d, #8a6906);
+    border-radius: 20%;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    padding: 8px;
+}
+
+.link-gmail:hover {
+    border-radius: 20%;
+    background: linear-gradient(135deg, #ea4335, #fbbc05);
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    padding: 8px;
+}
+
+.wa-img {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.35));
+    transition: all 0.6s ease;
+}
+
+.link-wa {
+    width: 190px;
+    height: 190px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    background: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    transition: all 0.6s ease;
+
+}
+
+.wa-img:hover {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(135deg, #17823e, #0a5048);
+    border-radius: 20%;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    padding: 8px;
+
+}
+
+.link-wa:hover {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 20%;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+
+    padding: 8px;
+}
+
+.dc-img {
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.35));
+    transition: all 0.6s ease;
+}
+
+.link-discord {
+    width: 190px;
+    height: 190px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    background: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    transition: all 0.6s ease;
+
+}
+
+.dc-img:hover {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(135deg, #3c44a3, #293294);
+    border-radius: 20%;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    padding: 8px;
+
+}
+
+.link-discord:hover {
+    background: linear-gradient(135deg, #5865F2, #404EED);
+    border-radius: 20%;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+
+    padding: 8px;
+}
+
+
+
+.p-penutup {
+    max-width: 650px;
+    margin: 20px auto 60px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+
+@media (max-width:600px) {
+    .container-navbar {
+        height: auto;
+    }
+
+    .ul-navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 14px 0;
+        gap: 1px;
+    }
+
+    .li-navbar {
+        font-size: 15px;
+        margin: 2px;
+    }
+
+    .container-a {
+        height: auto;
+    }
+
+    .judul {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .p-judul {
+        font-size: 15px;
+        max-width: 90%;
+        padding-bottom: 1px;
+    }
+
+    .container-kontak {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 10px 30px;
+        gap: 8px;
+    }
+
+    .link-gmail,
+    .link-wa,
+    .link-discord {
+        width: 105px;
+        height: 105px;
+        flex-shrink: 0;
+        font-size: 10px;
+        letter-spacing: 0;
+        word-spacing: 0;
+        text-shadow: 2px 2px 0 #6c63ff;
+    }
+
+    .gmail-img {
+        width: 65px;
+        height: 55px;
+    }
+
+    .wa-img,
+    .dc-img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .gmail-img:hover {
+        width: 60px;
+        height: 50px;
+    }
+
+    .wa-img:hover,
+    .dc-img:hover {
+        width: 60px;
+        height: 60px;
+    }
+
+    .link-gmail:hover,
+    .link-wa:hover,
+    .link-discord:hover {
+        width: 105px;
+        height: 105px;
+        padding: 0;
+    }
+
+    .p-penutup {
+        padding-top: 1px;
+    }
+
+}
