@@ -180,18 +180,25 @@ body {
 
 .p-pendidikan {
     width: fit-content;
+    max-width: 90%;
     margin: 0 auto 50px;
 }
 
 .p-pendidikan p {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 120px minmax(0, 1fr);
+    column-gap: 8px;
     font-size: 20px;
     margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.p-pendidikan b {
+    font-weight: bold;
 }
 
 .p-pendidikan span {
-    font-weight: bold;
+    min-width: 0;
 }
 
 .keahlian-judul {
