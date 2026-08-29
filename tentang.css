@@ -447,13 +447,16 @@ body {
         padding-top: 20px;
     }
 
-    .p-pendidikan {
+   .p-pendidikan {
+        width: 90%;
         max-width: 90%;
-        padding: 0;
     }
 
     .p-pendidikan p {
-        grid-template-columns: 100px 1fr;
+        grid-template-columns: 90px minmax(0, 1fr);
+        column-gap: 8px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .h2-sosmed {
